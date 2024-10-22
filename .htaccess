@@ -1,0 +1,4 @@
+ErrorDocument 404 /err/404.php
+ErrorDocument 403 /err/403.php
+ErrorDocument 400 /err/400.php
+ErrorDocument 500 /err/500.php

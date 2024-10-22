@@ -1,0 +1,644 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+   
+  body {
+    margin: 20px auto;
+    font-family: "Arial";
+    font-weight: 300;
+    background-image: url('./assets/img/bg_dark.png');
+    position: relative;
+  }
+  
+  #discord {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+    }
+  
+      #discord :hover {
+        filter: brightness(50%);
+    }
+  
+      #modechanger {
+        /*position: absolute;
+        top: 10px;
+        left: 25px;*/
+        float:left;
+        padding:20px;
+    }
+  
+  
+  
+  
+   
+  form {
+    padding: 15px 25px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
+   
+  form label {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+   
+  input {
+    font-family: "Arial";
+  }
+   
+  a {
+    color: #0000ff;
+    text-decoration: none;
+  }
+   
+  a:hover {
+    text-decoration: underline;
+  }
+   
+  #wrapper {
+    margin: 0 auto;
+    padding-bottom: 25px;
+    background: #eee;
+    width: 600px;
+    max-width: 100%;
+    border: 5px solid #a7a7a7;
+    border-radius: 4px;
+  }
+  #loginform {
+    margin: 0 auto;
+    padding-bottom: 25px;
+    background: #eee;
+    width: fit-content;
+    max-width: 100%;
+    border: 5px solid #a7a7a7;
+    border-radius: 4px;
+    padding-top: 18px;
+    text-align: center;
+  }
+  
+  #registerform {
+    margin: 0 auto;
+    padding-bottom: 25px;
+    background: #eee;
+    width: fit-content;
+    max-width: 100%;
+    border: 5px solid #a7a7a7;
+    border-radius: 4px;
+    padding-top: 18px;
+    text-align: center;
+  }
+  
+   
+  #loginform p, #registerform p {
+    padding: 15px 25px;
+    font-size: 1.4rem;
+    font-weight: bold;
+  }
+  
+  #registerform .register {
+    padding: 15px 25px;
+    font-size: 1rem;
+    vertical-align: super;
+    font-weight: bold;
+  }
+  
+  /*#registerform input {
+  }*/
+  
+  #loginform input.name, #registerform input.username, #registerform input.email {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: white;
+    background-color: #212121;
+    border-radius: 4px;
+    border-color: #00941d;
+  }
+  
+  #registerform input.password, #registerform input.repeatpassword {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: white;
+    background-color: #212121;
+    border-radius: 4px;
+    border-color: #0095b0;
+  }
+  
+  #loginform input.enter {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: black;
+  }
+   
+  
+  
+  #onlinebox {
+    text-align: left;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    padding: 10px;
+    background: #212121;
+    height: 300px;
+    width: 530px;
+    border: 4px solid #a7a7a7;
+    overflow: auto;
+    border-radius: 4px;
+    border-bottom: 4px solid #a7a7a7;
+  }
+  
+  .onlineuser b.user-name {
+    font-weight: bold;
+    background: #546e7a;
+    color: white;
+    padding: 2px 4px;
+    font-size: 90%;
+    border-radius: 4px;
+    margin: 0 5px 0 0;
+  }
+  
+  .onlineuser a {
+    text-decoration: none;
+  }
+   
+  #usermsg {
+    flex: 1;
+    border-radius: 4px;
+    border: 1px solid #a7a7a7;
+    background-color: #212121;
+    color: white;
+    font-size: medium;
+  }
+  
+  
+   
+  #name {
+    border-radius: 4px;
+    border: 1px solid #ff9800;
+    padding: 2px 8px;
+  }
+   
+  #submitmsg,
+  #enter,
+  #dismissipmsg {
+    background: #00ff44;
+    border: 2px solid #24b54b;
+    color: black;
+    padding: 4px 10px;
+    font-weight: bold;
+    border-radius: 4px;
+  }
+   
+  
+   
+  .error {
+    background: #ff0000;
+    color: white;
+    font-weight: bold;
+    padding: 2px 4px;
+    font-size: 90%;
+    border-radius: 4px;
+    margin: 0 5px 0 0;
+  }
+   
+  #menu {
+    padding: 15px 25px;
+    display: flex;
+  }
+   
+  #menu p.welcome {
+    flex: 1;
+    font-size: 150%;
+  }
+  
+  #onlineppltext p.onlineppl {
+    text-align: center;
+    flex: 1;
+    font-size: 300%;
+  }
+  
+  #menu p.welcome b.user {
+    font-weight: bold;
+    background: #546e7a;
+    color: white;
+    padding: 2px 4px;
+    font-size: 90%;
+    border-radius: 4px;
+    margin: 0 5px 0 0;
+  }
+  
+  #menu p.welcome b.owner {
+    font-weight: bold;
+    background: #01f3ff;
+    color: black;
+    padding: 2px 4px;
+    font-size: 90%;
+    border-radius: 4px;
+    margin: 0 5px 0 0;
+  }
+   
+  a#exit {
+    color: white;
+    background: #c62828;
+    padding: 6px 8px;
+    border-radius: 4px;
+    font-weight: bold;
+  }
+   
+  #chatbox {
+    text-align: left;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    padding: 10px;
+    background: #212121;
+    opacity: 100%;
+    height: 300px;
+    width: 530px;
+    border: 4px solid #a7a7a7;
+    overflow: auto;
+    border-radius: 4px;
+    border-bottom: 4px solid #a7a7a7;
+  }
+  
+  .msgln {
+    margin: 0 0 5px 0;
+    background-image: linear-gradient(to right, #00941c, #0095ba  );
+    border: 4px solid #a7a7a7;
+    border-radius: 4px;
+    height: fit-content;
+    width: fit-content;
+    color: white;
+  }
+  
+  
+  .msgln a.messagemenu {
+    text-align: right;
+  }
+  
+  .onlineuser {
+    margin: 0 0 5px 0;
+    background-image: linear-gradient(to right, #00941c, #0095ba  );
+    border: 4px solid #a7a7a7;
+    border-radius: 4px;
+    height: 25px;
+    color: white;
+    width: fit-content;
+  }
+   
+  .onlineuser p.onlineuser-info {
+    margin: auto;
+    padding: 3px;
+  }
+  .msgln span.left-info {
+    color: orangered;
+  }
+   
+  .msgln span.chat-time {
+    color: white;
+    font-weight: bold;
+    font-size: 60%;
+    vertical-align: super;
+    padding-left:3px;
+  }
+  
+  .msgln p.msgtext {
+    margin: auto;
+    padding: 5px;
+  }
+   
+  .msgln b.user-name, .msgln b.user-name-left {
+    font-weight: bold;
+    background: #546e7a;
+    color: white;
+    padding: 2px 4px;
+    font-size: 90%;
+    border-radius: 4px;
+    margin: 0 5px 0 0;
+  }
+  
+  .msgln b.broadcast {
+    font-weight: bold;
+    background: red;
+    color: white;
+    padding: 2px 4px;
+    font-size: 90%;
+    border-radius: 4px;
+    margin: 0 5px 0 0;
+  }
+  
+  
+  .msgln .taglink {
+    text-decoration: none;
+  }
+  
+  .msgln .weblink {
+    color: lightskyblue;
+  }
+  
+  
+  
+  .msgln b.owner, .msgln b.owner-left {
+    font-weight: bold;
+    background: #01f3ff;
+    color: black;
+    padding: 2px 4px;
+    font-size: 90%;
+    border-radius: 4px;
+    margin: 0 5px 0 0;
+  }
+  
+  
+  
+  .msgln b.mega, .msgln b.mega-left {
+    font-weight: bold;
+    background: yellow;
+    color: black;
+    padding: 2px 4px;
+    font-size: 90%;
+    border-radius: 4px;
+    margin: 0 5px 0 0;
+  }
+  
+  
+  
+  
+  
+   
+  .msgln b.user-name-left {
+    background: orangered;
+  }
+  
+  .emoji {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+    height:17px;
+    text-align: center;
+  }
+  
+  .emoji .tooltiptext {
+    visibility: hidden;
+    width: fit-content;
+    min-width: 180px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+  
+    /* Position the tooltip */
+    position:absolute;
+    z-index: 1;
+  }
+  
+  .emoji:hover .tooltiptext {
+    visibility: visible;
+  }
+  
+  .ipupdates {
+    position: relative;
+    border-bottom: 1px dotted black;
+    width: fit-content;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 4px;
+    padding: 5px 0;
+  
+    /* Position the tooltip */
+    z-index: 1;
+  }
+  
+  .ipupdatesmessage {
+    color: white;
+  }
+  .ipupdatesmessage a {
+    color: lightskyblue;
+    text-decoration: underline;
+  }
+  
+  
+    .noscriptm {
+    position: relative;
+    border-bottom: 1px dotted black;
+    width: fit-content;
+    background-color: red;
+    color: #fff;
+    text-align: center;
+    border-radius: 4px;
+    padding: 5px 0;
+  
+    /* Position the tooltip */
+    z-index: 1;
+  }
+  
+  .noscriptmsg {
+    color: white;
+  }
+  
+  
+  .switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  }
+  
+  .switch input {display:none;}
+  
+  .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+  }
+  
+  .slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+  }
+  
+  input:checked + .slider {
+  background-color: #212121;
+  }
+  
+  input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+  }
+  .confetticontainer {
+    height: 100px;
+  }
+  .confetti {
+  width: 15px;
+  height: 15px;
+  background-color: #f2d74e;
+  position: absolute;
+  left: 50%;
+  animation: confetti 5s ease-in-out -2s infinite;
+  transform-origin: left top;
+  }
+  
+  
+  
+  @keyframes confetti {
+  0% { transform: rotateZ(15deg) rotateY(0deg) translate(0,0); }
+  25% { transform: rotateZ(5deg) rotateY(360deg) translate(-5vw,20vh); }
+  50% { transform: rotateZ(15deg) rotateY(720deg) translate(5vw,60vh); }
+  75% { transform: rotateZ(5deg) rotateY(1080deg) translate(-10vw,80vh); }
+  100% { transform: rotateZ(15deg) rotateY(1440deg) translate(10vw,110vh); }
+  }
+  
+  /* The Modal (background) */
+  .insecurelinkpopup {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .insecurelinkpopup-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 20%; /* Could be more or less, depending on screen size */
+    height: 20%;
+    border-radius: 6px;
+    border: #000000;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .yesButton-insecurewebpage-open {
+      box-shadow: 0px 1px 0px 0px #f0f7fa;
+      background:linear-gradient(to bottom, #33bdef 5%, #019ad2 100%);
+      background-color:#33bdef;
+      border-radius:6px;
+      border:1px solid #057fd0;
+      display:inline-block;
+      cursor:pointer;
+      color:#ffffff;
+      font-family:Arial;
+      font-size:15px;
+      font-weight:bold;
+      padding:11px 40px;
+      text-decoration:none;
+      text-shadow:0px -1px 0px #5b6178;
+  }
+  .yesButton-insecurewebpage-open:hover {
+      background:linear-gradient(to bottom, #019ad2 5%, #33bdef 100%);
+      background-color:#019ad2;
+  }
+  .yesButton-insecurewebpage-open:active {
+      position:relative;
+      top:1px;
+  }
+  
+  .cancelButton-insecurewebpage-open {
+      box-shadow: 0px 1px 0px 0px #808080;
+      background:linear-gradient(to bottom, #355661 5%, #1c3a45 100%);
+      background-color:#355661;
+      border-radius:6px;
+      border:1px solid #000000;
+      display:inline-block;
+      cursor:pointer;
+      color:#ffffff;
+      font-family:Arial;
+      font-size:15px;
+      font-weight:bold;
+      padding:11px 40px;
+      text-decoration:none;
+      text-shadow:0px -1px 0px #5b6178;
+    position: absolute;
+    right:0px;
+    top:0px;
+  }
+  .cancelButton-insecurewebpage-open:hover {
+      background:linear-gradient(to bottom, #1c3a45 5%, #355661 100%);
+      background-color:#1c3a45;
+  }
+  .cancelButton-insecurewebpage-open:active {
+    position: absolute;
+      top:1px;
+    right:0px;
+  }
+  
+  .buttonPlacementDiv-insecurelinkpopup-content {
+    position:relative;
+    min-width:50px;
+  }
+  
+  .msgln span.edited {
+    color: #666;
+    font-size: 60%;
+    vertical-align: sub;
+  }
+  
+  .msgln:hover {
+    filter: brightness(70%);
+  }
+  
+  .category {
+    font-size: large;
+  }
+  
+  
+  
+  .success {
+    background: #00ff44;
+    color: black;
+    font-weight: bold;
+    padding: 2px 4px;
+    font-size: 90%;
+    border-radius: 4px;
+    margin: 0 5px 0 0;
+  }
+  
+  .banned h2, .banned h1, .banned h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+  }
+  
+  
+  

@@ -1,0 +1,394 @@
+body {
+  /*margin: 20px auto;*/
+  margin: 0px;
+  font-family: "Arial";
+  font-weight: 300;
+  /*background-image: url('./assets/img/bg_dark.png');*/
+  position: relative;
+}
+
+.vertical-menu {
+    width: 100%; /* Set a width if you like */
+    float: left;
+    background-color: #ccc;
+    border-bottom: 3px solid #a7a7a7;
+  }
+  
+  .vertical-menu a {
+    background-color: #eee; /* Grey background color */
+    color: black; /* Black text color */
+    display: block; /* Make the links appear below each other */
+    padding: 12px; /* Add some padding */
+    text-decoration: none; /* Remove underline from links */
+    border: 1px solid #a7a7a7;
+    float: left;
+  }
+  
+  .vertical-menu a:hover {
+    background-color: #ccc; /* Dark grey background on mouse-over */
+  }
+  
+  .vertical-menu a.active {
+    background-color: #04AA6D; /* Add a green color to the "active/current" link */
+    color: white;
+  }
+
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    left: 25px;
+    bottom: 5px;
+    border: 1px solid #212121;
+    }
+    
+    .switch input {display:none;}
+    
+    .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+    
+    }
+    
+    .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    }
+    
+    input:checked + .slider {
+    background-color: #212121;
+    }
+    
+    input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+    }
+    
+    input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+    }
+
+    .pfp {
+      border-radius: 50%;
+      width: 120px;
+      height: 120px;
+    }
+
+
+    .pfp-container {
+      position: relative;
+      width: fit-content;
+      height: fit-content;
+    }
+
+    .pfp-container .cameraIcon {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      display: none;
+      color: #FFF;
+    }
+
+    .iconCAM {
+      position: absolute;
+      width: 35%;
+      height: 35%;
+      top: 0;
+      right: 0;
+
+    }
+
+    .pfp-container:hover .cameraIcon {
+      display: block;
+      background: rgba(0, 0, 0, .6);
+      border-radius: 50%;
+    }
+
+    
+    .avata {
+      vertical-align:middle;
+      display: inline-block;
+    }
+       
+  b.user-name, b.user-name-left {
+    font-weight: bold;
+    padding: 2px 4px;
+    font-size: 3rem;
+    border-radius: 4px;
+    margin: 0 5px 0 0;
+    vertical-align:middle;
+    display: inline-block;
+    
+  }
+
+  input.username {
+    font-weight: bold;
+    background: #546e7a;
+    color: white;
+    padding: 2px 4px;
+    font-size: 3rem;
+    border-radius: 4px;
+    margin: 0 5px 0 0;
+    vertical-align:middle;
+    display: inline-block;
+    width:fit-content;
+  }
+
+  /*span {
+    display: none;
+  }*/
+
+  .hidden {
+    visibility: hidden;
+  }
+
+  #noDecoration {
+    text-decoration: none;
+  }
+
+  #content {
+    padding-left: 15px;
+  }
+
+
+  
+  .stylishContainer {
+    top: 10px;
+    background-color: #ccc;
+    border: 4px solid #a7a7a7;
+    border-radius: 4px;
+    width: fit-content;
+    height: fit-content;
+    padding: 10px;
+  }
+
+  .extraWidth {
+    padding-right: 15px;
+  }
+
+
+
+
+  .tooltip {
+    position: relative;
+    display: inline-block;
+    /*border-bottom: 1px dotted black;*/
+  }
+  
+  .tooltip .tooltiptext {
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+  
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: -5px;
+    left: 105%;
+
+      opacity: 0;
+    transition: opacity .2s ease-out;
+    -moz-transition: opacity .2s ease-out;
+    -webkit-transition: opacity .2s ease-out;
+    -o-transition: opacity .2s ease-out;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    opacity: 1;
+    
+  }
+
+  input#username {
+    width: 300px;
+  }
+
+  .buttonRemove {
+    color: white;
+    background: #c62828;
+    border-radius: 4px;
+    font-weight: bold;
+    position: fixed;
+    border: none;
+    padding: 4px;
+  }
+
+  p {
+    color: black;
+  }
+
+  label {
+    color: black;
+  }
+
+  button.reveal {
+    border-radius: 4px;
+    background-color: #212121;
+    color: white;
+    border: none;
+    padding: 4px;
+    cursor: pointer;
+
+  }
+
+  .userDetails {
+    padding: 5px;
+    background-color: rgba(0, 0, 0, .4);
+    border-radius: 4px;
+  }
+
+  .changePass {
+    width: 100%;
+    background-image: linear-gradient(to right, #00941c, #0095ba  );
+    border-radius: 4px;
+    border: 3px solid #212121;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    font-weight: bold;
+    font-size: large;
+  }
+
+  .changePass:hover {
+    filter: brightness(80%);
+  }
+
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 500px;
+    height: 500px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  }
+  
+  /* Add Animation */
+  @-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+  }
+  
+  @keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+  }
+  
+  /* The Close Button */
+  .close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .modal-header {
+    padding: 2px 10px;
+    background-color: #5cb85c;
+    color: white;
+  }
+  
+  .modal-body {padding: 2px 16px;}
+  
+  .modal-footer {
+    padding: 2px 5px;
+    background-color: #5cb85c;
+    color: white;
+  }
+
+  .inputStyle {
+    width: 100%;
+    padding: 5px;
+    background-color: #212121;
+    color: white;
+    border: 4px solid #a7a7a7;
+    border-radius: 4px;
+  }
+
+  .moveTop {
+    margin-top: 5px;
+  }
+
+  .modal-inside {
+    text-align: center;
+  }
+
+  #changeEmailButton {
+    /*padding: 4px;
+    border: 2px solid #a7a7a7;*/
+    width: 200px;
+
+    background-image: linear-gradient(to right, #00941c, #0095ba  );
+    border-radius: 4px;
+    border: 3px solid #212121;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    font-weight: bold;
+    font-size: large;
+  }
+
+  #changeEmailButton:hover {
+    filter: brightness(80%);
+  }
+
+  #exit {
+    top: 0px;
+    right: 0px;
+    margin: 5px;
+    padding: 5px;
+    padding-top: 10px;
+    z-index: 10;
+    color: white;
+    background: #c62828;
+    padding: 6px 8px;
+    border-radius: 4px;
+    font-weight: bold;
+    position: fixed;
+    text-decoration: none;
+  }

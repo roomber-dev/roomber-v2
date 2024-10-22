@@ -1,0 +1,4 @@
+SELECT * FROM pytania WHERE
+(kategoria="programowanie" OR
+kategoria="systemy operacyjne i sieci") AND
+rok=2012

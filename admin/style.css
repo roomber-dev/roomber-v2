@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+   
+  body {
+    margin: 20px auto;
+    font-family: "Arial";
+    font-weight: 300;
+    background-image: url('../assets/img/bg_dark.png');
+    position: relative;
+  }
+
+  p.welcome {
+      color: white;
+      font-size: 2rem;
+  }
+  
+  b.user-name {
+    font-weight: bold;
+    background: #546e7a;
+    color: white;
+    padding: 2px 4px;
+    font-size: 90%;
+    border-radius: 4px;
+    margin: 0 5px 0 0;
+  }
+
+
+  button {
+    text-align: center;
+    margin: auto;
+    color: white;
+    width: fit-content;
+    height: fit-content;
+    background-color: green;
+    font-family: 'Arial';
+    border: 4px solid #a7a7a7;
+    border-radius: 4px;
+  }
+
+  button:active {
+    border: 4px solid gray;
+  }

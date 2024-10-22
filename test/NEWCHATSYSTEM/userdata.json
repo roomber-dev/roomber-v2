@@ -1,0 +1,52 @@
+[
+    {
+        "id": "00000000000000000000",
+        "username": "XtraMessage",
+        "avatar": "UNKNOWN",
+        "admin": true,
+        "email": "UNKNOWN",
+        "password": "UNKNOWN",
+        "namecolorbg": "#FFD700",
+        "namecolorfg": "#000000"
+    },
+     {
+        "id": "69696969696969696969",
+        "username": "neksodebe",
+        "avatar": "AVATARPATH",
+        "admin": true,
+        "email": "",
+        "password": "",
+        "namecolorbg": "#01f3ff",
+        "namecolorfg": "black"
+    },
+    {
+        "id": "69420694206942069420",
+        "username": "mega",
+        "avatar": "AVATARPATH",
+        "admin": false,
+        "email": "",
+        "password": "",
+        "namecolorbg": "yellow",
+        "namecolorfg": "black"
+    },
+    {
+        "id": "00000000000000000012",
+        "username": "Discord",
+        "avatar": "UNKNOWN",
+        "admin": true,
+        "email": "UNKNOWN",
+        "password": "UNKNOWN",
+        "namecolorbg": "#5865F2",
+        "namecolorfg": "white"
+    },
+    {
+        "id": "34985734939485739445",
+        "username": "d1xi",
+        "avatar": "UNKNOWN",
+        "admin": false,
+        "email": "UNKNOWN",
+        "password": "UNKNOWN",
+        "namecolorbg": "#546e7a",
+        "namecolorfg": "white"
+    }
+]
